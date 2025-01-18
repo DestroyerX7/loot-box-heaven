@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f19e7af50e8254696f4a3fd8555827, type: 3}
+  m_Name: MP5
+  m_EditorClassIdentifier: 
+  <Prefab>k__BackingField: {fileID: 4424251468434438339, guid: 52a452da85b6b1f4a84f5d32ee7d84cf, type: 3}
+  <InventoryItemSO>k__BackingField: {fileID: 11400000, guid: 993492e94040fa94bb9e08c0e74696a4, type: 2}
