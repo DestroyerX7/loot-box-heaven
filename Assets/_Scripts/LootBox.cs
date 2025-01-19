@@ -4,15 +4,7 @@ using UnityEngine.UI;
 
 public class LootBox : InventoryItem
 {
-    [System.Serializable]
-    private struct RarityGroup
-    {
-        public InventoryItem[] InventoryItemPrefabs;
-        public int MinInclusive;
-        public int MaxExclusive;
-    }
-
-    [SerializeField] private RarityGroup[] _rarityGroups;
+    [field: SerializeField] public LootBoxSO LootBoxSO { get; private set; }
 
     protected override void Start()
     {
@@ -23,7 +15,7 @@ public class LootBox : InventoryItem
     public InventoryItem Open()
     {
         int randNum = Random.Range(0, 100);
-        InventoryItem[] inventoryItemPrefabs = _rarityGroups.First(r => randNum >= r.MinInclusive && randNum < r.MaxExclusive).InventoryItemPrefabs;
+        InventoryItem[] inventoryItemPrefabs = LootBoxSO.RarityGroups.First(r => randNum >= r.MinInclusive && randNum < r.MaxExclusive).InventoryItemPrefabs;
         return inventoryItemPrefabs[Random.Range(0, inventoryItemPrefabs.Length)];
     }
 }

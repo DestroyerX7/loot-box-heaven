@@ -305,7 +305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4267631402880174961}
   - component: {fileID: 7676650086991663526}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Idle (34x28)_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

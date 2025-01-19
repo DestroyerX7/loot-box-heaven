@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 682c64680d66fb642b77345457768431, type: 3}
-  m_Name: GreenNinja
+  m_Name: Knight
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: GreenNinja
+  <Name>k__BackingField: Knight
   <MaxStackCount>k__BackingField: 1
   <CanHaveMultipleStacks>k__BackingField: 0
-  <Sprite>k__BackingField: {fileID: 4723107735738678597, guid: 2a4e356b33be54045b57bba2aba58f5f, type: 3}
-  <SpritePos>k__BackingField: {x: 0, y: 0}
+  <Sprite>k__BackingField: {fileID: -657947652, guid: 151a6981603a75d4ea7c6d9ff672e272, type: 3}
+  <SpritePos>k__BackingField: {x: 0, y: -7}
   <SpriteRotationZ>k__BackingField: 0
-  <SpriteWidth>k__BackingField: 80
-  <SpriteHeight>k__BackingField: 80
+  <SpriteWidth>k__BackingField: 400
+  <SpriteHeight>k__BackingField: 400

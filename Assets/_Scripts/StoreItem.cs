@@ -1,27 +1,36 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StoreItem : MonoBehaviour
 {
+    [SerializeField] private LootBoxSO _lootBoxSO;
     [SerializeField] private InventoryItem _inventoryItemPrefab;
-    [SerializeField] private int _coinCost;
-    [SerializeField] private int _gemCost;
+
+    [field: SerializeField] public int CoinCost { get; private set; }
+    [field: SerializeField] public int GemCost { get; private set; }
 
     private void Start()
     {
-        GetComponent<Button>().onClick.AddListener(Buy);
+        GetComponent<Button>().onClick.AddListener(ShowInventoryItemPreviews);
     }
 
-    private void Buy()
+    public void Buy()
     {
-        if (_coinCost > StoreManager.Instance.Coins || _gemCost > StoreManager.Instance.Gems)
+        if (CoinCost > StoreManager.Instance.Coins || GemCost > StoreManager.Instance.Gems)
         {
             return;
         }
 
-        StoreManager.Instance.Coins -= _coinCost;
-        StoreManager.Instance.Gems -= _gemCost;
+        StoreManager.Instance.Coins -= CoinCost;
+        StoreManager.Instance.Gems -= GemCost;
 
         InventoryManager.Instance.AddInventoryItem(_inventoryItemPrefab);
+    }
+
+    private void ShowInventoryItemPreviews()
+    {
+        InventoryItem[] inventoryItems = _lootBoxSO.RarityGroups.SelectMany(r => r.InventoryItemPrefabs).ToArray();
+        MainMenuManager.Instance.SelectStoreItem(this, inventoryItems);
     }
 }

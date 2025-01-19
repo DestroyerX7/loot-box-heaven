@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,6 +11,12 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Image _selectedCharacterImage;
     [SerializeField] private Image _selectedWeaponImage;
     [SerializeField] private Image _selectedPetImage;
+
+    [SerializeField] private Transform _inventoryItemPreviewContainer;
+    [SerializeField] private GameObject _inventoryItemPreviewPrefab;
+
+    private StoreItem _selectedStoreItem;
+    [SerializeField] private Button _buyButton;
 
     private void Awake()
     {
@@ -94,5 +101,38 @@ public class MainMenuManager : MonoBehaviour
         image.rectTransform.rotation = Quaternion.Euler(0, 0, inventoryItemSO.SpriteRotationZ);
         image.rectTransform.sizeDelta = new(inventoryItemSO.SpriteWidth, inventoryItemSO.SpriteHeight);
         image.enabled = true;
+    }
+
+    public void Buy()
+    {
+        if (_selectedStoreItem != null)
+        {
+            _selectedStoreItem.Buy();
+        }
+    }
+
+    public void SelectStoreItem(StoreItem storeItem, InventoryItem[] inventoryItems)
+    {
+        _buyButton.interactable = storeItem.CoinCost <= StoreManager.Instance.Coins && storeItem.GemCost <= StoreManager.Instance.Gems;
+        _selectedStoreItem = storeItem;
+
+        foreach (Transform inventoryItemPreview in _inventoryItemPreviewContainer)
+        {
+            Destroy(inventoryItemPreview.gameObject);
+        }
+
+        foreach (InventoryItem inventoryItem in inventoryItems)
+        {
+            InventoryItemSO inventoryItemSO = inventoryItem.InventoryItemSO;
+
+            GameObject inventoryItemPreview = Instantiate(_inventoryItemPreviewPrefab, _inventoryItemPreviewContainer);
+
+            Image image = inventoryItemPreview.GetComponentsInChildren<Image>().First(i => i.gameObject != inventoryItemPreview); // Make an inventoryItemPreview class
+            image.sprite = inventoryItemSO.Sprite;
+            image.rectTransform.anchoredPosition = inventoryItemSO.SpritePos;
+            image.rectTransform.rotation = Quaternion.Euler(0, 0, inventoryItemSO.SpriteRotationZ);
+            image.rectTransform.sizeDelta = new(inventoryItemSO.SpriteWidth, inventoryItemSO.SpriteHeight);
+            image.enabled = true;
+        }
     }
 }

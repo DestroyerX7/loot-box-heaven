@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb082a165c70ac419d015e1e98cdd7d, type: 3}
+  m_Name: LootBoxTwo
+  m_EditorClassIdentifier: 
+  <RarityGroups>k__BackingField:
+  - InventoryItemPrefabs:
+    - {fileID: 3995960751789785874, guid: 94eb80e4e8f2f734d8e85657e4bea20f, type: 3}
+    MinInclusive: 0
+    MaxExclusive: 100
