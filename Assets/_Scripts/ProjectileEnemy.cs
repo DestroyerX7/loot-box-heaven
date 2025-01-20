@@ -87,7 +87,9 @@ public class ProjectileEnemy : MonoBehaviour
         _canAttack = false;
 
         Vector2 direction = _playerTransform.position - transform.position;
-        Projectile projectile = Instantiate(_projectilePrefab, transform.position, Quaternion.identity);
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.Euler(0, 0, angle);
+        Projectile projectile = Instantiate(_projectilePrefab, transform.position, rotation);
         projectile.SetVelcoity(direction.normalized * _projectileSpeed);
         projectile.SetDamage(_damage);
         projectile.SetKnockbackStats(_knockbackForce, _knockbackDuration);

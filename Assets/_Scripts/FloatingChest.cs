@@ -11,14 +11,27 @@ public class FloatingChest : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     private Tween _lastShakeTween;
 
-    // Fix this, can go higher when disabled and reenabled
-    private void OnEnable()
+    private Tween _hoverTween;
+
+    private void Start()
     {
         _rectTransform = GetComponent<RectTransform>();
-        _rectTransform.DOAnchorPosY(_rectTransform.anchoredPosition.y + _maxHoverHeight, _hoverDuration).SetLoops(-1, LoopType.Yoyo);
+        _hoverTween = _rectTransform.DOAnchorPosY(_rectTransform.anchoredPosition.y + _maxHoverHeight, _hoverDuration).SetLoops(-1, LoopType.Yoyo);
+    }
+
+    private void OnEnable()
+    {
+        _hoverTween.Play();
     }
 
     private void OnDisable()
+    {
+        _hoverTween.Pause();
+        _lastShakeTween?.Kill();
+        _rectTransform.localRotation = Quaternion.identity;
+    }
+
+    private void OnDestroy()
     {
         transform.DOKill();
     }
