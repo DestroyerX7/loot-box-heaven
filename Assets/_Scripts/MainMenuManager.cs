@@ -18,6 +18,9 @@ public class MainMenuManager : MonoBehaviour
     private StoreItem _selectedStoreItem;
     [SerializeField] private Button _buyButton;
 
+    [SerializeField] private GameObject _settingsMenu;
+    [SerializeField] private Button _settingsButton;
+
     private void Awake()
     {
         if (Instance != null)
@@ -40,6 +43,8 @@ public class MainMenuManager : MonoBehaviour
         {
             Select(SelectionType.Pet, SelectionManager.Instance.PetSelectionDataSO.InventoryItemSO);
         }
+
+        _settingsButton.onClick.AddListener(ToggleSettings);
     }
 
     public void Play()
@@ -134,5 +139,10 @@ public class MainMenuManager : MonoBehaviour
             image.rectTransform.sizeDelta = new(inventoryItemSO.SpriteWidth, inventoryItemSO.SpriteHeight);
             image.enabled = true;
         }
+    }
+
+    private void ToggleSettings()
+    {
+        _settingsMenu.SetActive(!_settingsMenu.activeInHierarchy);
     }
 }

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Linq;
 using UnityEngine;
 
 public class MeleeEnemy : MonoBehaviour
@@ -27,6 +26,9 @@ public class MeleeEnemy : MonoBehaviour
         _animator = GetComponent<Animator>();
 
         InvokeRepeating(nameof(ScanForPlayer), 0, 1);
+
+        GameManager.Instance.OnPause.AddListener(() => { enabled = false; _rb.linearVelocity = Vector2.zero; });
+        GameManager.Instance.OnUnpause.AddListener(() => enabled = true);
     }
 
     private void Update()

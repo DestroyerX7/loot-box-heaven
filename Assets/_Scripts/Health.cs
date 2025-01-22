@@ -6,12 +6,19 @@ public class Health : MonoBehaviour, IDamageable
     [SerializeField] private float _maxHealth = 100;
     private float _currentHealth;
 
+    public UnityEvent<float, float> OnHeal;
     public UnityEvent<float, float> OnTakeDamage;
     public UnityEvent OnDie;
 
     private void Start()
     {
         _currentHealth = _maxHealth;
+    }
+
+    public void Heal(float healAmount)
+    {
+        _currentHealth = Mathf.Min(_currentHealth + healAmount, _maxHealth);
+        OnHeal.Invoke(_currentHealth, _maxHealth);
     }
 
     public void TakeDamage(float damage)

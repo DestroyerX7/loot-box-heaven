@@ -33,6 +33,7 @@ public class SceneTransitioner : MonoBehaviour
 
     private IEnumerator TransitionToCoroutine(string sceneName)
     {
+        GameManager.Instance.Pause();
         _animator.SetTrigger("TransitionOut");
 
         yield return new WaitForSeconds(_transitionDuration);

@@ -1,6 +1,7 @@
 using DG.Tweening;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CinemachineCamera _cinemachineCamera;
 
     [SerializeField] private GameObject _deathUI;
+
+    public UnityEvent OnPause;
+    public UnityEvent OnUnpause;
 
     private void Awake()
     {
@@ -55,5 +59,15 @@ public class GameManager : MonoBehaviour
     public void MainMenu()
     {
         SceneTransitioner.Instance.TransitionTo("MainMenu");
+    }
+
+    public void Pause()
+    {
+        OnPause.Invoke();
+    }
+
+    public void Unpause()
+    {
+        OnUnpause.Invoke();
     }
 }
