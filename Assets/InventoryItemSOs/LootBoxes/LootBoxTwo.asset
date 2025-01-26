@@ -15,7 +15,7 @@ MonoBehaviour:
   <Name>k__BackingField: LootBoxTwo
   <MaxStackCount>k__BackingField: 10
   <CanHaveMultipleStacks>k__BackingField: 1
-  <Sprite>k__BackingField: {fileID: 0}
+  <Sprite>k__BackingField: {fileID: 419375177, guid: c129528aa2041f9429066fe0b49b4008, type: 3}
   <SpritePos>k__BackingField: {x: 0, y: 0}
   <SpriteRotationZ>k__BackingField: 0
   <SpriteWidth>k__BackingField: 0

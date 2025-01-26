@@ -14,6 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <RarityGroups>k__BackingField:
   - InventoryItemPrefabs:
-    - {fileID: 3995960751789785874, guid: 94eb80e4e8f2f734d8e85657e4bea20f, type: 3}
+    - {fileID: 2882895806731074872, guid: 623e3e9117a65c740b1d5efa1376419e, type: 3}
     MinInclusive: 0
+    MaxExclusive: 50
+  - InventoryItemPrefabs:
+    - {fileID: 3995960751789785874, guid: 94eb80e4e8f2f734d8e85657e4bea20f, type: 3}
+    MinInclusive: 50
+    MaxExclusive: 90
+  - InventoryItemPrefabs:
+    - {fileID: 507576921111740578, guid: 65129a9cd5b99dc429de4cb6a67a7107, type: 3}
+    - {fileID: 2590870457025263436, guid: 286fcf37d35006d47ac3137693e2e7cf, type: 3}
+    MinInclusive: 90
     MaxExclusive: 100

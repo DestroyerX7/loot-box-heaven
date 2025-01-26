@@ -2,35 +2,35 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    private Rigidbody2D _rb;
-    private Vector2 _velocity;
+    protected Rigidbody2D Rb;
+    protected Vector2 Velocity;
 
-    [SerializeField] private float _despawnTime = 10;
+    [SerializeField] protected float DespawnTime = 10;
 
-    private float _damage;
-    private float _knockbackForce;
-    private float _knockbackDuration;
+    protected float Damage;
+    protected float KnockbackForce;
+    protected float KnockbackDuration;
 
     private void Awake()
     {
-        _rb = GetComponent<Rigidbody2D>();
+        Rb = GetComponent<Rigidbody2D>();
     }
 
     private void Start()
     {
-        Destroy(gameObject, _despawnTime);
+        Destroy(gameObject, DespawnTime);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.TryGetComponent(out IDamageable damageable))
         {
-            damageable.TakeDamage(_damage);
+            damageable.TakeDamage(Damage);
         }
 
         if (other.gameObject.TryGetComponent(out KnockbackObject knockbackObject))
         {
-            knockbackObject.Knockback(_velocity.normalized, _knockbackForce, _knockbackDuration);
+            knockbackObject.Knockback(Velocity.normalized, KnockbackForce, KnockbackDuration);
         }
 
         Destroy(gameObject);
@@ -38,18 +38,18 @@ public class Projectile : MonoBehaviour
 
     public void SetVelcoity(Vector2 velocity)
     {
-        _rb.linearVelocity = velocity;
-        _velocity = velocity;
+        Rb.linearVelocity = velocity;
+        Velocity = velocity;
     }
 
     public void SetDamage(float damage)
     {
-        _damage = damage;
+        Damage = damage;
     }
 
     public void SetKnockbackStats(float knockbackForce, float knockbackDuration)
     {
-        _knockbackForce = knockbackForce;
-        _knockbackDuration = knockbackDuration;
+        KnockbackForce = knockbackForce;
+        KnockbackDuration = knockbackDuration;
     }
 }

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 682c64680d66fb642b77345457768431, type: 3}
-  m_Name: LootBoxOne
+  m_Name: RPG
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: LootBoxOne
-  <MaxStackCount>k__BackingField: 10
-  <CanHaveMultipleStacks>k__BackingField: 1
-  <Sprite>k__BackingField: {fileID: -518475062, guid: c129528aa2041f9429066fe0b49b4008, type: 3}
+  <Name>k__BackingField: RPG
+  <MaxStackCount>k__BackingField: 1
+  <CanHaveMultipleStacks>k__BackingField: 0
+  <Sprite>k__BackingField: {fileID: 8588649503206239180, guid: 5f584ba5a46145447924ff6c77a561f5, type: 3}
   <SpritePos>k__BackingField: {x: 0, y: 0}
   <SpriteRotationZ>k__BackingField: 0
-  <SpriteWidth>k__BackingField: 0
-  <SpriteHeight>k__BackingField: 0
+  <SpriteWidth>k__BackingField: 80
+  <SpriteHeight>k__BackingField: 80

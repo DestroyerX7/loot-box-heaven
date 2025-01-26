@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 587a7b1ac007449468b1057bff0b8acb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _selectionDataSO: {fileID: 0}
+  _selectionDataSO: {fileID: 11400000, guid: 8e57f1a23f4b3ec469e35bf60a7aa388, type: 2}
   _selectionType: 0
 --- !u!1 &8610517763334841447
 GameObject:
