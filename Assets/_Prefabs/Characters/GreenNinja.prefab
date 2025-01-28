@@ -84,7 +84,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 50
   m_Sprite: {fileID: 4723107735738678597, guid: 2a4e356b33be54045b57bba2aba58f5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -247,6 +247,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHealth: 100
+  OnHeal:
+    m_PersistentCalls:
+      m_Calls: []
   OnTakeDamage:
     m_PersistentCalls:
       m_Calls:
@@ -254,18 +257,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
         m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TakeDamage
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8519953871000226995}
-        m_TargetAssemblyTypeName: Healthbar, Assembly-CSharp
-        m_MethodName: SetHeathbar
-        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -450,14 +441,3 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7739016417772957953, guid: b69070ff81a030d44b8790c3e9cbf02e, type: 3}
   m_PrefabInstance: {fileID: 501731259568524642}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8519953871000226995 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8127437170683429329, guid: b69070ff81a030d44b8790c3e9cbf02e, type: 3}
-  m_PrefabInstance: {fileID: 501731259568524642}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84635f484c2cdaa44b1b1a7ea5ae4369, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 60
   m_Sprite: {fileID: 8588649503206239180, guid: 5f584ba5a46145447924ff6c77a561f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -139,7 +139,7 @@ MonoBehaviour:
   _shootTransform: {fileID: 152637066339310433}
   _damage: 50
   _projectileSpeed: 10
-  _fireRate: 100
+  _fireRate: 75
   _fireMode: 0
   _knockbackForce: 25
   _knockbackDuration: 0.05

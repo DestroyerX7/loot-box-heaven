@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Creeper
+  m_Controller: {fileID: 9100000, guid: c6b77fb0a0fcc194588103d5decdd1da, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 6b240b40b0ab23c40bf29de68e52d3f9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ba53b93079cc8ee48803cd1bdf25ade4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: c2faeca4520bd174a880f64c1753ab45, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: db137496b3ecfab4199a0f3c51c0b8e5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: aa69dbf1797dde54287b1d5296c25788, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9979f657d743495469087909a8234df1, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f63fede4aa8a7464785e505025f17315, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b7fbff1d9c958e04890344d69e66c431, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 00c56b081acf1f448a101a5124120959, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 39eea38bfe34e2245917f20d124e0b17, type: 2}

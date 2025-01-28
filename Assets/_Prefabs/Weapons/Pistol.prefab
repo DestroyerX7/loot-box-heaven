@@ -52,7 +52,7 @@ MonoBehaviour:
   _shootTransform: {fileID: 9002289186653242333}
   _damage: 25
   _projectileSpeed: 6
-  _fireRate: 100
+  _fireRate: 150
   _fireMode: 0
   _knockbackForce: 10
   _knockbackDuration: 0.05
@@ -214,7 +214,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 60
   m_Sprite: {fileID: -1503923485, guid: 5f584ba5a46145447924ff6c77a561f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

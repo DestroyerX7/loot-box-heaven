@@ -12,5 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f19e7af50e8254696f4a3fd8555827, type: 3}
   m_Name: MP5
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: 
+  <MaxStackCount>k__BackingField: 1
+  <CanHaveMultipleStacks>k__BackingField: 0
+  <Sprite>k__BackingField: {fileID: 0}
+  <SpritePos>k__BackingField: {x: 0, y: 0}
+  <SpriteRotationZ>k__BackingField: 0
+  <SpriteWidth>k__BackingField: 0
+  <SpriteHeight>k__BackingField: 0
   <Prefab>k__BackingField: {fileID: 4424251468434438339, guid: 52a452da85b6b1f4a84f5d32ee7d84cf, type: 3}
   <InventoryItemSO>k__BackingField: {fileID: 11400000, guid: 993492e94040fa94bb9e08c0e74696a4, type: 2}

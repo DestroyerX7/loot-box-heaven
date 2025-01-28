@@ -84,7 +84,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 50
   m_Sprite: {fileID: -657947652, guid: 151a6981603a75d4ea7c6d9ff672e272, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -265,18 +265,6 @@ MonoBehaviour:
           m_StringArgument: TakeDamage
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4920748164620815801}
-        m_TargetAssemblyTypeName: Healthbar, Assembly-CSharp
-        m_MethodName: SetHeathbar
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TakeDamage
-          m_BoolArgument: 0
-        m_CallState: 2
   OnDie:
     m_PersistentCalls:
       m_Calls:
@@ -448,17 +436,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b69070ff81a030d44b8790c3e9cbf02e, type: 3}
---- !u!114 &4920748164620815801 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8127437170683429329, guid: b69070ff81a030d44b8790c3e9cbf02e, type: 3}
-  m_PrefabInstance: {fileID: 3783154983495879784}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84635f484c2cdaa44b1b1a7ea5ae4369, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &6910480076140232041 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7739016417772957953, guid: b69070ff81a030d44b8790c3e9cbf02e, type: 3}

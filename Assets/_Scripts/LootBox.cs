@@ -14,7 +14,7 @@ public class LootBox : InventoryItem
 
     public InventoryItem Open()
     {
-        int randNum = Random.Range(0, 100);
+        int randNum = Random.Range(0, LootBoxSO.MaxRange);
         InventoryItem[] inventoryItemPrefabs = LootBoxSO.RarityGroups.First(r => randNum >= r.MinInclusive && randNum < r.MaxExclusive).InventoryItemPrefabs;
         return inventoryItemPrefabs[Random.Range(0, inventoryItemPrefabs.Length)];
     }

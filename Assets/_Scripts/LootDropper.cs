@@ -29,4 +29,10 @@ public class LootDropper : MonoBehaviour
             }
         }
     }
+
+    
+    public void SetNumDrops(int numDrops)
+    {
+        _numDrops = numDrops;
+    }
 }

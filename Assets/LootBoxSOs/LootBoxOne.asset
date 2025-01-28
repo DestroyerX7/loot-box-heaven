@@ -12,14 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fb082a165c70ac419d015e1e98cdd7d, type: 3}
   m_Name: LootBoxOne
   m_EditorClassIdentifier: 
+  <MaxRange>k__BackingField: 100
   <RarityGroups>k__BackingField:
   - InventoryItemPrefabs:
     - {fileID: 3105741798457171359, guid: e10d414d77851464e89ac28e5deebf71, type: 3}
-    - {fileID: 4166425803628904568, guid: 27d5a0d52e7ea81478bf8b70dd7c936c, type: 3}
     - {fileID: 7925237362390532802, guid: b57c81f0f35c5e64487a68eccc55c8bb, type: 3}
     MinInclusive: 0
+    MaxExclusive: 50
+  - InventoryItemPrefabs:
+    - {fileID: 7722894302481321832, guid: 0648d97da1bc1004b90d0c751c8bab7f, type: 3}
+    - {fileID: 7519507557592064788, guid: 2a76412bc86b5924da4889f483353d90, type: 3}
+    MinInclusive: 50
     MaxExclusive: 75
   - InventoryItemPrefabs:
     - {fileID: 8937632065331778957, guid: 3e2f50bb26a7b5c4784ec947a39bf9a4, type: 3}
+    - {fileID: 2247077970814243392, guid: ed908dd55b221684f9fba929536b556c, type: 3}
     MinInclusive: 75
     MaxExclusive: 100

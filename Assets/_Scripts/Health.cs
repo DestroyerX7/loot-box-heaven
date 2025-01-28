@@ -33,8 +33,13 @@ public class Health : MonoBehaviour, IDamageable
 
         if (_currentHealth <= 0)
         {
-            OnDie.Invoke();
+            Die();
         }
+    }
+
+    public void Die()
+    {
+        OnDie.Invoke();
     }
 
     public void Despawn(float time)

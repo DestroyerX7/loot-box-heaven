@@ -4,6 +4,7 @@ public class Rocket : Projectile
 {
     [SerializeField] private GameObject _explosionEffectPrefab;
     [SerializeField] private float _explosionRange = 2;
+    private bool _canExplode = true;
 
     private void Start()
     {
@@ -17,6 +18,11 @@ public class Rocket : Projectile
 
     private void Explode()
     {
+        if (!_canExplode)
+        {
+            return;
+        }
+
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, _explosionRange);
 
         foreach (Collider2D collider in colliders)
@@ -37,5 +43,6 @@ public class Rocket : Projectile
         Destroy(explosionEffect, 0.5f);
 
         Destroy(gameObject);
+        _canExplode = false;
     }
 }

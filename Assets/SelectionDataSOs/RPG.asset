@@ -12,5 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f19e7af50e8254696f4a3fd8555827, type: 3}
   m_Name: RPG
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: 
+  <MaxStackCount>k__BackingField: 1
+  <CanHaveMultipleStacks>k__BackingField: 0
+  <Sprite>k__BackingField: {fileID: 0}
+  <SpritePos>k__BackingField: {x: 0, y: 0}
+  <SpriteRotationZ>k__BackingField: 0
+  <SpriteWidth>k__BackingField: 0
+  <SpriteHeight>k__BackingField: 0
   <Prefab>k__BackingField: {fileID: 5975366995616821803, guid: 041fab3e57a705842ad2169fef1fa07e, type: 3}
   <InventoryItemSO>k__BackingField: {fileID: 11400000, guid: 3f80ef60ddec5c14c8bc124c10bd603c, type: 2}

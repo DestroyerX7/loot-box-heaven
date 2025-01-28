@@ -12,5 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f19e7af50e8254696f4a3fd8555827, type: 3}
   m_Name: Knight
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: 
+  <MaxStackCount>k__BackingField: 1
+  <CanHaveMultipleStacks>k__BackingField: 0
+  <Sprite>k__BackingField: {fileID: 0}
+  <SpritePos>k__BackingField: {x: 0, y: 0}
+  <SpriteRotationZ>k__BackingField: 0
+  <SpriteWidth>k__BackingField: 0
+  <SpriteHeight>k__BackingField: 0
   <Prefab>k__BackingField: {fileID: 8435057207878947750, guid: 1501742673ac8e94b956c4cf56a8be13, type: 3}
   <InventoryItemSO>k__BackingField: {fileID: 11400000, guid: dbc6dfbbf93e1d44695a9060a0c47d96, type: 2}
