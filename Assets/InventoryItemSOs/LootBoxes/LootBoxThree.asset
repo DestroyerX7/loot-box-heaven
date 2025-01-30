@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: LootBoxThree
   m_EditorClassIdentifier: 
   <Name>k__BackingField: LootBoxThree
+  <Type>k__BackingField: 3
+  <Rarity>k__BackingField: 4
   <MaxStackCount>k__BackingField: 10
   <CanHaveMultipleStacks>k__BackingField: 1
   <Sprite>k__BackingField: {fileID: 21300000, guid: 9581964e4ae24824e8c59f32f5575e3c, type: 3}

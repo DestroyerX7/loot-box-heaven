@@ -31,6 +31,8 @@ public class Health : MonoBehaviour, IDamageable
         _currentHealth -= damage;
         OnTakeDamage.Invoke(_currentHealth, _maxHealth);
 
+        PopupManager.Instance.SpawnPopup("-" + damage, transform.position, 1);
+
         if (_currentHealth <= 0)
         {
             Die();

@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
 
         Instantiate(SelectionManager.Instance.WeaponSelectionDataSO.Prefab, character.transform);
 
-        if (SelectionManager.Instance.PetSelectionDataSO != null)
+        if (SelectionManager.Instance.PetSelectionDataSO.Prefab != null)
         {
             GameObject pet = Instantiate(SelectionManager.Instance.PetSelectionDataSO.Prefab, SpawnPos + Vector2.right, Quaternion.identity);
             pet.GetComponent<Pet>().SetPlayerRb(character.GetComponent<Rigidbody2D>());

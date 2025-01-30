@@ -15,10 +15,22 @@ MonoBehaviour:
   <MaxRange>k__BackingField: 1000
   <RarityGroups>k__BackingField:
   - InventoryItemPrefabs:
+    - {fileID: 9112189499832211116, guid: a8c455adc6a0f7f488d94a45014b26e0, type: 3}
+    MinInclusive: 0
+    MaxExclusive: 500
+  - InventoryItemPrefabs:
+    - {fileID: 3067048648435268368, guid: 9ba12d3d850358847be4f1d6b9fcc55e, type: 3}
+    MinInclusive: 500
+    MaxExclusive: 800
+  - InventoryItemPrefabs:
+    - {fileID: 7377820013906780778, guid: e5d03b200fbebb54fb82f8486fab5109, type: 3}
+    MinInclusive: 800
+    MaxExclusive: 900
+  - InventoryItemPrefabs:
     - {fileID: 507576921111740578, guid: 65129a9cd5b99dc429de4cb6a67a7107, type: 3}
     - {fileID: 2590870457025263436, guid: 286fcf37d35006d47ac3137693e2e7cf, type: 3}
     - {fileID: 2812097605411447824, guid: 4c57fcf0231730d46a30dc5b870cd858, type: 3}
-    MinInclusive: 0
+    MinInclusive: 900
     MaxExclusive: 999
   - InventoryItemPrefabs:
     - {fileID: 8188329112512529525, guid: 01df54aa9d7c65e4d9d8b03e140bb914, type: 3}

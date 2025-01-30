@@ -42,7 +42,7 @@ public class Pet : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, _playerRb.position, speed * Time.deltaTime);
         }
 
-        _spriteRenderer.flipX = _playerRb.position.x < transform.position.x;
+        transform.localScale = _playerRb.position.x >= transform.position.x ? Vector3.one : new Vector3(-1, 1, 1);
     }
 
     public void SetPlayerRb(Rigidbody2D playerRb)

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 682c64680d66fb642b77345457768431, type: 3}
   m_Name: Dog
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: 
+  <Type>k__BackingField: 2
   <MaxStackCount>k__BackingField: 1
   <CanHaveMultipleStacks>k__BackingField: 0
   <Sprite>k__BackingField: {fileID: 2007924046, guid: 38cdf77945de5284885a7ac98a411972, type: 3}

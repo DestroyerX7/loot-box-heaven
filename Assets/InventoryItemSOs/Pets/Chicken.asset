@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Chicken
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Chicken
+  <Type>k__BackingField: 2
+  <Rarity>k__BackingField: 1
   <MaxStackCount>k__BackingField: 1
   <CanHaveMultipleStacks>k__BackingField: 0
   <Sprite>k__BackingField: {fileID: 1038184894, guid: c87e68858725cac43a83cb3d450c98b0, type: 3}

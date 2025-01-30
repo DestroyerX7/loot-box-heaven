@@ -27,7 +27,10 @@ public class InventoryManager : MonoBehaviour
 
     private List<InventoryItem> _inventoryItems = new();
 
-    [SerializeField] private Transform _inventoryItemsContainer;
+    [SerializeField] private Transform _lootBoxesTransform;
+    [SerializeField] private Transform _charactersTransform;
+    [SerializeField] private Transform _weaponsTransform;
+    [SerializeField] private Transform _petsTransform;
 
     [SerializeField] private InventoryItem[] _inventoryItemPrefabs; // Maybe make this an SO later
     [SerializeField] private Dictionary<string, InventoryItem> _inventoryItemPrefabsDictionary = new();
@@ -47,7 +50,9 @@ public class InventoryManager : MonoBehaviour
     {
         SetupDictionary();
 
-        InventoryItem[] inventoryItems = _inventoryItemsContainer.GetComponentsInChildren<InventoryItem>();
+        Transform[] inventoryItemTransforms = { _lootBoxesTransform, _charactersTransform, _weaponsTransform, _petsTransform };
+
+        IEnumerable<InventoryItem> inventoryItems = inventoryItemTransforms.SelectMany(t => t.GetComponentsInChildren<InventoryItem>());
 
         InventorySaveData inventorySaveData = SaveDataManager.LoadData<InventorySaveData>("/inventory.json");
 
@@ -113,8 +118,25 @@ public class InventoryManager : MonoBehaviour
             }
         }
 
-        InventoryItem spawnedInventoryItem = Instantiate(inventoryItemPrefab, _inventoryItemsContainer);
+        Transform transform = inventoryItemPrefab.InventoryItemSO.Type switch
+        {
+            InventoryItemType.Character => _charactersTransform,
+            InventoryItemType.Weapon => _weaponsTransform,
+            InventoryItemType.Pet => _petsTransform,
+            InventoryItemType.LootBox => _lootBoxesTransform,
+            _ => throw new System.Exception("No type matches."),
+        };
+
+        InventoryItem spawnedInventoryItem = Instantiate(inventoryItemPrefab, transform);
         _inventoryItems.Add(spawnedInventoryItem);
+
+        InventoryItem[] sorted = _inventoryItems.Where(i => i.InventoryItemSO.Type == inventoryItemPrefab.InventoryItemSO.Type).OrderBy(i => i.InventoryItemSO.Rarity).ToArray();
+
+        for (int i = 0; i < sorted.Length; i++)
+        {
+            sorted[i].transform.SetSiblingIndex(i);
+        }
+
         return spawnedInventoryItem;
     }
 
@@ -122,5 +144,18 @@ public class InventoryManager : MonoBehaviour
     {
         Destroy(inventoryItem.gameObject);
         _inventoryItems.Remove(inventoryItem);
+    }
+
+    public bool IsDuplicate(InventoryItem inventoryItemPrefab)
+    {
+        foreach (InventoryItem inventoryItem in _inventoryItems)
+        {
+            if (inventoryItem.InventoryItemSO == inventoryItemPrefab.InventoryItemSO)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

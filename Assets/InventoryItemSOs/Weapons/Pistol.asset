@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Pistol
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Pistol
+  <Type>k__BackingField: 1
+  <Rarity>k__BackingField: 1
   <MaxStackCount>k__BackingField: 1
   <CanHaveMultipleStacks>k__BackingField: 0
   <Sprite>k__BackingField: {fileID: -1503923485, guid: 5f584ba5a46145447924ff6c77a561f5, type: 3}

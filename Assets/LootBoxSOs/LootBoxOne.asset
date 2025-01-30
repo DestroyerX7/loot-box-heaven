@@ -17,6 +17,7 @@ MonoBehaviour:
   - InventoryItemPrefabs:
     - {fileID: 3105741798457171359, guid: e10d414d77851464e89ac28e5deebf71, type: 3}
     - {fileID: 7925237362390532802, guid: b57c81f0f35c5e64487a68eccc55c8bb, type: 3}
+    - {fileID: 2725264363352925812, guid: a4496ecef3597244aa86407b7a7f3d79, type: 3}
     MinInclusive: 0
     MaxExclusive: 50
   - InventoryItemPrefabs:

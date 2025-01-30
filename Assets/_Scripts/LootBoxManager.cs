@@ -57,6 +57,9 @@ public class LootBoxManager : MonoBehaviour
         }
 
         InventoryItem inventoryItemPrefab = _selectedLootBox.Open();
+
+        print(InventoryManager.Instance.IsDuplicate(inventoryItemPrefab) ? "Duplicate" : "New Item");
+
         InventoryManager.Instance.AddInventoryItem(inventoryItemPrefab);
         _selectedLootBox.SetStackCount(_selectedLootBox.StackCount - 1);
         _lootBoxSpinObjects[22].SetSpriteImage(inventoryItemPrefab.InventoryItemSO);

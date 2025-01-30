@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Knight
   m_EditorClassIdentifier: 
   <Name>k__BackingField: Knight
+  <Type>k__BackingField: 0
+  <Rarity>k__BackingField: 2
   <MaxStackCount>k__BackingField: 1
   <CanHaveMultipleStacks>k__BackingField: 0
   <Sprite>k__BackingField: {fileID: -657947652, guid: 151a6981603a75d4ea7c6d9ff672e272, type: 3}

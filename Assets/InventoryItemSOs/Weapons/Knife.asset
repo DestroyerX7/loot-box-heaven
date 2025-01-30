@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 682c64680d66fb642b77345457768431, type: 3}
   m_Name: Knife
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: 
+  <Type>k__BackingField: 1
   <MaxStackCount>k__BackingField: 1
   <CanHaveMultipleStacks>k__BackingField: 0
   <Sprite>k__BackingField: {fileID: 7148083330478609817, guid: 5f584ba5a46145447924ff6c77a561f5, type: 3}

@@ -27,4 +27,8 @@ MonoBehaviour:
     - {fileID: 6035974483144890517, guid: 50aaf722e3ca4b241abac4a82c5640d2, type: 3}
     - {fileID: 4910686617811831847, guid: eda7c20b7c82bf64bb0f3f909c646112, type: 3}
     MinInclusive: 85
+    MaxExclusive: 95
+  - InventoryItemPrefabs:
+    - {fileID: 6942258877067339746, guid: 4c4f93e3d492cd944b730701875ba8c1, type: 3}
+    MinInclusive: 95
     MaxExclusive: 100

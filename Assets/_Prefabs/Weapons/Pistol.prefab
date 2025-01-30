@@ -56,6 +56,7 @@ MonoBehaviour:
   _fireMode: 0
   _knockbackForce: 10
   _knockbackDuration: 0.05
+  _maxSpreadAngle: 0
 --- !u!114 &1733476287377278095
 MonoBehaviour:
   m_ObjectHideFlags: 0
