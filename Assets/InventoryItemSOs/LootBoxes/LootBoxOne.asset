@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Name>k__BackingField: LootBoxOne
   <Type>k__BackingField: 3
+  <Rarity>k__BackingField: 0
   <MaxStackCount>k__BackingField: 10
   <CanHaveMultipleStacks>k__BackingField: 1
   <Sprite>k__BackingField: {fileID: -518475062, guid: c129528aa2041f9429066fe0b49b4008, type: 3}
-  <SpritePos>k__BackingField: {x: 0, y: 0}
+  <SpritePos>k__BackingField: {x: -2, y: 12}
   <SpriteRotationZ>k__BackingField: 0
-  <SpriteWidth>k__BackingField: 0
-  <SpriteHeight>k__BackingField: 0
+  <SpriteWidth>k__BackingField: 110
+  <SpriteHeight>k__BackingField: 110

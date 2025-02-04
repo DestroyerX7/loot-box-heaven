@@ -9,7 +9,7 @@ public class InventoryItem : MonoBehaviour
         { InventoryItemRarity.Common, new(128, 128, 128, 255) },
         { InventoryItemRarity.Uncommon, new(0, 255, 0, 255) },
         { InventoryItemRarity.Epic, new(0, 128, 255, 255) },
-        { InventoryItemRarity.Rare, new(224, 0, 255, 255) },
+        { InventoryItemRarity.Rare, new(192, 0, 255, 255) },
         { InventoryItemRarity.Legendary, new(255, 224, 0, 255) },
     };
 

@@ -7,6 +7,7 @@ public class SceneTransitioner : MonoBehaviour
     public static SceneTransitioner Instance { get; private set; }
 
     [SerializeField] private float _transitionDuration = 1;
+    private bool _isTransitioning;
 
     private Animator _animator;
 
@@ -28,11 +29,17 @@ public class SceneTransitioner : MonoBehaviour
 
     public void TransitionTo(string sceneName)
     {
+        if (_isTransitioning)
+        {
+            return;
+        }
+
         StartCoroutine(TransitionToCoroutine(sceneName));
     }
 
     private IEnumerator TransitionToCoroutine(string sceneName)
     {
+        _isTransitioning = true;
         GameManager.Instance.Pause();
         _animator.SetTrigger("TransitionOut");
 

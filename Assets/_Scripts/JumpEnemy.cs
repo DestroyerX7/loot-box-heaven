@@ -68,4 +68,9 @@ public class JumpEnemy : MonoBehaviour
         _animator.SetTrigger("Jump");
         transform.DOJump(transform.position + jumpPos, _jumpPower, 1, _jumpDuration);
     }
+
+    public void RemoveComponent()
+    {
+        Destroy(this);
+    }
 }

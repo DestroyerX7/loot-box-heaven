@@ -19,6 +19,8 @@ public class Health : MonoBehaviour, IDamageable
     {
         _currentHealth = Mathf.Min(_currentHealth + healAmount, _maxHealth);
         OnHeal.Invoke(_currentHealth, _maxHealth);
+
+        PopupManager.Instance.SpawnPopup("+" + healAmount, transform.position, 1, Color.green);
     }
 
     public void TakeDamage(float damage)

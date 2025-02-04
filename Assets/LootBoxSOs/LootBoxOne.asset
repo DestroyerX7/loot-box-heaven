@@ -19,14 +19,21 @@ MonoBehaviour:
     - {fileID: 7925237362390532802, guid: b57c81f0f35c5e64487a68eccc55c8bb, type: 3}
     - {fileID: 2725264363352925812, guid: a4496ecef3597244aa86407b7a7f3d79, type: 3}
     MinInclusive: 0
-    MaxExclusive: 50
+    MaxExclusive: 40
   - InventoryItemPrefabs:
     - {fileID: 7722894302481321832, guid: 0648d97da1bc1004b90d0c751c8bab7f, type: 3}
     - {fileID: 7519507557592064788, guid: 2a76412bc86b5924da4889f483353d90, type: 3}
-    MinInclusive: 50
-    MaxExclusive: 75
+    - {fileID: 6555298938209381650, guid: 31968b2d7a6981749b03ee98d5ad9277, type: 3}
+    - {fileID: 5609452251104457884, guid: fa67347e0aa7cd04eae4bc5d1f89749c, type: 3}
+    MinInclusive: 40
+    MaxExclusive: 65
   - InventoryItemPrefabs:
     - {fileID: 8937632065331778957, guid: 3e2f50bb26a7b5c4784ec947a39bf9a4, type: 3}
     - {fileID: 2247077970814243392, guid: ed908dd55b221684f9fba929536b556c, type: 3}
-    MinInclusive: 75
+    - {fileID: 112976257776895217, guid: bb75f9733a99a0940bf661d3cd939cd4, type: 3}
+    MinInclusive: 65
+    MaxExclusive: 85
+  - InventoryItemPrefabs:
+    - {fileID: 6675980856630346915, guid: 6e24a03a227a0274ea8f30f48b3ed086, type: 3}
+    MinInclusive: 85
     MaxExclusive: 100

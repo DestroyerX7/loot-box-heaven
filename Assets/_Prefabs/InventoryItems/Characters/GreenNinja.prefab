@@ -364,4 +364,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _selectionDataSO: {fileID: 11400000, guid: 02fd2e5ff55b0394d87e5901f52853fb, type: 2}
   _selectionType: 0
-  _selectionPrefab: {fileID: 4845507731874098740, guid: 11c040371d5c1554e9e1e2909180af92, type: 3}

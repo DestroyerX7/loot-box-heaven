@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f19e7af50e8254696f4a3fd8555827, type: 3}
+  m_Name: Revolver
+  m_EditorClassIdentifier: 
+  <Prefab>k__BackingField: {fileID: 74930642036207008, guid: d4109db64cd00294ab1f3073932459c5, type: 3}
+  <InventoryItemSO>k__BackingField: {fileID: 11400000, guid: 7a6f72e7b416dd44aa742df853d45a2a, type: 2}

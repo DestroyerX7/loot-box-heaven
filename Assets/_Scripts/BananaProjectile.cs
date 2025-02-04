@@ -11,7 +11,6 @@ public class BananaProjectile : Projectile
         Vector2 endPos = transform.position + transform.right * _throwDistance;
         float duration = (endPos - (Vector2)transform.position).magnitude / Velocity.magnitude;
         transform.DOMove(endPos, duration).SetLoops(2, LoopType.Yoyo).OnComplete(() => Destroy(gameObject));
-        print(duration);
         Rb.linearVelocity = Vector2.zero;
 
         Destroy(gameObject, DespawnTime);

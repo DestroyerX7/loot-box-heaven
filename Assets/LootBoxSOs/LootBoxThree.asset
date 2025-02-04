@@ -20,10 +20,12 @@ MonoBehaviour:
     MaxExclusive: 500
   - InventoryItemPrefabs:
     - {fileID: 3067048648435268368, guid: 9ba12d3d850358847be4f1d6b9fcc55e, type: 3}
+    - {fileID: 2927243478499149472, guid: f3f0b281061c11e4ab542542e699bb72, type: 3}
     MinInclusive: 500
     MaxExclusive: 800
   - InventoryItemPrefabs:
     - {fileID: 7377820013906780778, guid: e5d03b200fbebb54fb82f8486fab5109, type: 3}
+    - {fileID: 2369343203115918031, guid: 7b34f92ff5c12d64cb7f44e20c512e6c, type: 3}
     MinInclusive: 800
     MaxExclusive: 900
   - InventoryItemPrefabs:
@@ -31,8 +33,12 @@ MonoBehaviour:
     - {fileID: 2590870457025263436, guid: 286fcf37d35006d47ac3137693e2e7cf, type: 3}
     - {fileID: 2812097605411447824, guid: 4c57fcf0231730d46a30dc5b870cd858, type: 3}
     MinInclusive: 900
-    MaxExclusive: 999
+    MaxExclusive: 998
   - InventoryItemPrefabs:
     - {fileID: 8188329112512529525, guid: 01df54aa9d7c65e4d9d8b03e140bb914, type: 3}
+    MinInclusive: 998
+    MaxExclusive: 999
+  - InventoryItemPrefabs:
+    - {fileID: 5886043882043554423, guid: 5c9e39401dbe56d44852a3b93c087fce, type: 3}
     MinInclusive: 999
     MaxExclusive: 1000

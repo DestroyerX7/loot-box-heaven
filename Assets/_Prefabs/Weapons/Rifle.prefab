@@ -51,9 +51,10 @@ MonoBehaviour:
   _projectilePrefab: {fileID: 3001943216723014189, guid: 2145bf8235d3f694e907f217aa984184, type: 3}
   _shootTransform: {fileID: 3625540185838049279}
   _damage: 10
-  _projectileSpeed: 8
+  _projectileSpeed: 15
   _fireRate: 600
   _fireMode: 1
+  _numProjectiles: 1
   _knockbackForce: 10
   _knockbackDuration: 0.05
   _maxSpreadAngle: 10

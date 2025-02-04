@@ -20,6 +20,7 @@ public class ProjectileWeapon : MonoBehaviour
     [SerializeField] private float _projectileSpeed = 6;
     [SerializeField] private int _fireRate = 300;
     [SerializeField] private FireMode _fireMode;
+    [SerializeField] private int _numProjectiles = 1;
     private bool _canShoot = true;
 
     [SerializeField] private float _knockbackForce = 25;
@@ -63,15 +64,18 @@ public class ProjectileWeapon : MonoBehaviour
     {
         _canShoot = false;
 
-        float shootAngle = Random.Range(-_maxSpreadAngle, _maxSpreadAngle);
-        Vector2 shootDirection = Quaternion.AngleAxis(shootAngle, Vector3.forward) * _shootTransform.right;
-        float projectileRotationAngle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
-        Quaternion projectileRotation = Quaternion.Euler(0, 0, projectileRotationAngle);
+        for (int i = 0; i < _numProjectiles; i++)
+        {
+            float shootAngle = Random.Range(-_maxSpreadAngle, _maxSpreadAngle);
+            Vector2 shootDirection = Quaternion.AngleAxis(shootAngle, Vector3.forward) * _shootTransform.right;
+            float projectileRotationAngle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+            Quaternion projectileRotation = Quaternion.Euler(0, 0, projectileRotationAngle);
 
-        Projectile projectile = Instantiate(_projectilePrefab, _shootTransform.position, projectileRotation);
-        projectile.SetVelcoity(shootDirection.normalized * _projectileSpeed);
-        projectile.SetDamage(_damage);
-        projectile.SetKnockbackStats(_knockbackForce, _knockbackDuration);
+            Projectile projectile = Instantiate(_projectilePrefab, _shootTransform.position, projectileRotation);
+            projectile.SetVelcoity(shootDirection.normalized * _projectileSpeed);
+            projectile.SetDamage(_damage);
+            projectile.SetKnockbackStats(_knockbackForce, _knockbackDuration);
+        }
 
         yield return new WaitForSeconds(60f / _fireRate);
 
